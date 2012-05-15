@@ -12,7 +12,9 @@ Twitterapp::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+twitterapp::Application.routes.draw do
+2	  root :to => 'welcome#index'
+3	end
   # Sample resource route with options:
   #   resources :products do
   #     member do
