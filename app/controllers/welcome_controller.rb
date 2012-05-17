@@ -1,7 +1,6 @@
 class WelcomeController < ApplicationController
-  def index
+  def application
   @tweets = Tweet.all
-  render :action => 'application'
   end
 end
 
