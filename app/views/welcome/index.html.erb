@@ -3,14 +3,13 @@
 			<th>Tweet</th>
 			<th>Hashtag</th>
 	</tr>
-	<% Twitter.search("#ruby").first.text %>
-<!--% @tweets.each do |tweet| %-->
-	<!--tr-->
-		<!--td--><!--%= tweet.post %--><!--/td-->
-		<!--td--><!--%= tweet.extract_tags %--><!--/td-->
-	<!--/tr-->
-	<!--% end %-->
+<% @tweets.each do |tweet| %>
+	<tr>
+		<td><%= tweet.post %></td>
+		<td><%= tweet.extract_tags %></td>
+	</tr>
+	<% end %>
 </table>
-<!--% if tweets.empty? %-->
+<% if tweets.empty? %>
 	<p>No Tweets :( </p>
-<!--% end %-->
+<% end %>
