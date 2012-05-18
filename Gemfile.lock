@@ -119,5 +119,5 @@ DEPENDENCIES
   pg
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
-  twitter
+  twitter (>= 1.0)
   uglifier (>= 1.0.3)
