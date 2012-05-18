@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def application
+  def index
   @tweets = Tweet.all
   end
 end
