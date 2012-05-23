@@ -1,6 +1,4 @@
-class Tweet < ActiveRecord::Base
+class Tweet 
 	include Twitter
-	def post
-		Twitter.search("#sorryimnotsorry", :rpp =>10).text
-		end
+	Twitter.search("#sorryimnotsorry", :rpp =>10).text
 end
