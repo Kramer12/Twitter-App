@@ -1,12 +1,10 @@
-<table>
-	<tr>
-			<th>Tweet</th>
-	</tr>
+<h1> Tweet </h1>
+<br />
+<h4> Hashtag= #sorryimnotsorry </h4>
+<br />
+
 <% @tweets.each do |tweet| %>
-	<tr>
-		<td><%= @tweets %></td>
-	</tr>
+		<ul><%= tweet.text %></ul>
 	<% end %>
 	
-</table>
 
