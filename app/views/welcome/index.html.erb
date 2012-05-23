@@ -1,12 +1,10 @@
 <table>
 	<tr>
 			<th>Tweet</th>
-			<th>Hashtag</th>
 	</tr>
 <% @tweets.each do |tweet| %>
 	<tr>
 		<td><%= tweet.post %></td>
-		<td><%= tweet.extract_tags %></td>
 	</tr>
 	<% end %>
 	

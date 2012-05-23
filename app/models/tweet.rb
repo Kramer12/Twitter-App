@@ -1,6 +1,6 @@
 class Tweet < ActiveRecord::Base
-	include Twitter::Extractor
-	def extract_tags
-		extract_hashtags(self.post)
+	include Twitter
+	def post
+		Twitter.search("#sorryimnotsorry", :rpp =>10).text
 		end
 end
