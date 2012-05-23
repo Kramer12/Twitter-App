@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   def index
   require 'twitter'
-  @tweets = Twitter.search("#sorryimnotsorry", :rpp =>10)
+  @tweets = Twitter.search("#ncstate", :rpp =>20)
   end
 end
 
