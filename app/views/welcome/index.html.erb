@@ -1,7 +1,9 @@
 <h1> Tweet </h1>
+<% hash_tag = YAML.load(File.open("#{Rails.root}/config/settings.yml")) %>
 <br />
-<h4> Hashtag= <%= hash_tag %> </h4>
+<h4> Hashtag= <%= hash_tag.print %> </h4>
 <br />
+<% end %>
 
 <% @tweets.each do |tweet| %>
 		<ul><%= tweet.text %></ul>
