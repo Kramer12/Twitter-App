@@ -2,9 +2,25 @@
 <br />
 <h4> Hashtag= </h4>
 <br />
-
+<table>
+<tr>
+<th>Tweet</th>
+<th>Picture</th>
+<th>Location</th>
+</tr>
+<tr>
 <% @tweets.each do |tweet| %>
-		<ul><%= tweet.text.location %></ul>
-	<% end %>
+<td>
+<%= tweet.text %>
+</td>
+<td>
+</td>
+<td>
+<%= tweet.location %>
+</td>
+<% end %>
+</tr>
+</table>
+
 	
 
