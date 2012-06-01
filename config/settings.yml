@@ -1,1 +1,3 @@
-hash_tag: #ncstate
+config:
+	:hashtags:
+		:hash_tag1: "#ncstate"
