@@ -1,1 +1,3 @@
-
+settings:
+	:hashtags:
+		:hash_tag1: "#ncstate"
