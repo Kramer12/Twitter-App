@@ -1,10 +1,10 @@
 <h1> Tweet </h1>
 <br />
-<h4> Hashtag= <%= @tag.inspect %> <% end %> </h4>
+<h4> Hashtag= </h4>
 <br />
 
 <% @tweets.each do |tweet| %>
-		<ul><%= tweet.text %></ul>
+		<ul><%= tweet.text.location %></ul>
 	<% end %>
 	
 
