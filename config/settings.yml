@@ -1,3 +1,1 @@
-production:
-	:hashtags:
-		:hash_tag: "#ncstate"
+hash_tag: #ncstate

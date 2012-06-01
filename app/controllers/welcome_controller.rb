@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
   @tweets = Twitter.search( "#ncstate", :rpp =>20)
   end
   def read_settings
-  @tag= APP_SETTINGS[:hashtags][:hash_tag]
+  @tag= APP_CONFIG["hash_tag"]
   end
   
 end
