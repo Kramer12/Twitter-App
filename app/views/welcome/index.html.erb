@@ -4,7 +4,8 @@
 <ol>
 <% @tweets.each do |tweet| %>
 		<li>
-		<%= tweet.text %>
+		<%= tweet.text %>,
+		<%= tweet.geo %>
 		</li>
 	<% end %>
 </ol>
