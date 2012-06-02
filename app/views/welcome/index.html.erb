@@ -1,15 +1,16 @@
-<h1> Tweet </h1>
 <br />
-<h4> Hashtag= </h4>
+<h2> Tweets </h2>
 <br />
-
 <% @tweets.each do |tweet| %>
-		<ul><%= tweet.text %></ul>
+		<ol><%= tweet.text %></ol>
 	<% end %>
+<br />
+<h2> Pictures </h2>
+<br />
 <% @tweets.each do |tweet| %>
 		<% t = tweet.media %>
 		<% t.each do |tw| %>
-		<ul><img src="<%= tw.media_url %>" alt="twitter pic" /></ul>
+		<ol><img src="<%= tw.media_url %>" alt="twitter pic" /></ol>
 		<% end %>
 	<% end %>
 
