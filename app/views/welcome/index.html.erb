@@ -1,24 +1,23 @@
 <br />
 <h2> Tweets </h2>
 <br />
+<ol>
 <% @tweets.each do |tweet| %>
-		<ol>
 		<li>
 		<%= tweet.text %>
 		</li>
-		</ol>
 	<% end %>
+</ol>
 <br />
 <h2> Pictures </h2>
 <br />
+<ol>
 <% @tweets.each do |tweet| %>
 		<% t = tweet.media %>
 		<% t.each do |tw| %>
-		<ol>
 		<li><img src="<%= tw.media_url %>" alt="twitter pic" />
 		</li>
-		</ol>
 		<% end %>
 	<% end %>
-
+</ol>
 
