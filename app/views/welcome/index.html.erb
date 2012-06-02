@@ -3,15 +3,14 @@
 <h4> Hashtag= </h4>
 <br />
 
-<ul>
 <% @tweets.each do |tweet| %>
-		<%= t = tweet.text %>
+		<ul><%= tweet.text %></ul>
 	<% end %>
 <% @tweets.each do |tweet| %>
 		<% t = tweet.media %>
 		<% t.each do |tw| %>
-		<img src="<%= tw.media_url %>" alt="twitter pic" />
+		<ul><img src="<%= tw.media_url %>" alt="twitter pic" /></ul>
 		<% end %>
 	<% end %>
-</ul>
+
 
