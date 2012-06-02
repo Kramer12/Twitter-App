@@ -6,7 +6,7 @@
 <% @tweets.each do |tweet| %>
 		<% t = tweet.media %>
 		<% t.each do |tw| %>
-		<ul><img src="<% tw.display_url %>" alt="twitter pic" /></ul>
+		<ul><img src="<%= tw.display_url %>" alt="twitter pic" /></ul>
 		<% end %>
 	<% end %>
 	
