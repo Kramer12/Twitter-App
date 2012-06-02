@@ -4,7 +4,10 @@
 <br />
 
 <% @tweets.each do |tweet| %>
-		<ul><%= tweet.media_url %></ul>
+		<% t = tweet.media %>
+		<% t.each do |tw| %>
+		<ul><%= tw.display_url %></ul>
+		<% end %>
 	<% end %>
 	
 
