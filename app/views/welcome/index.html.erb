@@ -15,7 +15,7 @@
 <ol>
 <% @tweets.each do |tweet| %>
 		<% t = tweet.media %>
-		<% t.each do |tw| %>
+		<% t do |tw| %>
 		<li><img src="<%= tw.media_url %>" alt="twitter pic" />
 		</li>
 		<% end %>
